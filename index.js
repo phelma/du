@@ -5,7 +5,7 @@ let regex = /^(\d*)/;
 
 module.exports = (path) => {
   return new Promise((res, rej) => {
-    exec('du', ['-s', path], (err, stdout, stderr) => {
+    exec('du', ['-ks', path], (err, stdout, stderr) => {
       let matches = stdout.match(regex);
       if (!err && !stderr && matches && matches.length > 1){
         res(matches[1]);
