@@ -1,6 +1,6 @@
 {
   "name": "du-wrapper",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "wrapper around du cli, gets the size of a dir in bytes, returns a promise",
   "main": "index.js",
   "repository": "phelma/du",
